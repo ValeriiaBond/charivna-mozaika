@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Charivna mozaika</title>
+	<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkq3PHHmhJCfpEFShuePmf-WppbcvzNUs&callback=initMap"
+      defer
+    ></script>
+	
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <style type="text/css">
+    	#map {
+        height: 532px;
+        width: 100%;
+        position: absolute!important;
+      }
+    </style>
+
+    <script>// Initialize and add the map
+function initMap() {
+  const myLatLng = { lat: 49.9827123192175, lng: 36.28928841762986 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: myLatLng,
+  });
+  const image =
+          "images/icons/location_mark.png";
+  const beachMarker = new google.maps.Marker({
+          position: { lat: 49.9798905185976, lng: 36.308824226887296 },
+          map,
+          icon: image,
+        });
+}
+</script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header_top">
+				<div class="header_top_contacts">
+					<div class="phone">(057) 738 30 93, (057) 738 76 93</div>
+					<div class="email">charivna@mozaika.com.ua</div>
+				</div>
+				<div class="logo">
+					<img src="images/logo.png" alt="Чарівна мозаїка">
+				</div>
+				<form action="#" class="header_top_search">
+					<input type="text" placeholder="Поиск">
+					<button class="search_btn"></button>
+				</form>	
+				<ul class="header_top_lang">
+					<li><a href="#">Укр</a></li>
+					<li class="active"><a href="#">Рус</a></li>
+					<li><a href="#">Eng</a></li>
+				</ul>	
+			</div>
+			<nav class="header_bottom">
+				<ul>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Продукция</a></li>
+					<li><a href="#">Волшебная жизнь</a></li>
+					<li><a href="#">АКЦИИ</a></li>
+					<li><a href="#">НОВОСТИ</a></li>
+					<li><a href="#">Клиентам</a></li>
+					<li><a href="#">Карьера с нами</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>     	 
+		</div>	
+	</header>
+
+		<div class="owl-carousel carousel owl-theme">
+		   <div class="item slider_item" style="width:100%; height: 590px">
+		    	<div class="slider_item_description">
+		    		<p>вкус детства</p>
+					<h3>Завтрак с Тиффани</h3>
+					<p>Мягкая конфета с нежной сливочной начинкой в шоколаде, украшена дробленым орехом</p>
+				</div>
+				<img src="images/zavtrak_s_tiffani.jpg" alt="завтрак с тифани">
+			</div>
+		   <div class="item slider_item" style="width:100%; height: 590px">
+		    	<div class="slider_item_description">
+		    		<p>вкус детства</p>
+					<h3>Завтрак с Тиффани</h3>
+					<p>Мягкая конфета с нежной сливочной начинкой в шоколаде, украшена дробленым орехом</p>
+				</div>
+				<img src="images/background_3.jpg" alt="завтрак с тифани">
+			</div>
+			<div class="item slider_item" style="width:100%; height: 590px">
+		    	<div class="slider_item_description">
+		    		<p>вкус детства</p>
+					<h3>Завтрак с Тиффани</h3>
+					<p>Мягкая конфета с нежной сливочной начинкой в шоколаде, украшена дробленым орехом</p>
+				</div>
+				<img src="images/zavtrak_s_tiffani.jpg" alt="завтрак с тифани">
+			</div>
+			<div class="item slider_item" style="width:100%; height: 590px">
+		    	<div class="slider_item_description">
+		    		<p>вкус детства</p>
+					<h3>Завтрак с Тиффани</h3>
+					<p>Мягкая конфета с нежной сливочной начинкой в шоколаде, украшена дробленым орехом</p>
+				</div>
+				<img src="images/background_3.jpg" alt="завтрак с тифани">
+			</div>
+		</div>
+	<div class="intro container">
+		<p>Добро пожаловать на сайт украинской кондитерской фабрики</p>
+		<div class="title"><img src="images/title.png" alt="чарівна мозаїка"></div>
+	</div>
+	<div class="products">
+		<h2>продукция</h2>
+			<div class="container">
+				<div class="product_book">
+					<ul class="book_dividers">
+						<li class="active"><a href="#">ТМ «Чарівна мозаїка»</a></li>
+						<li><a href="#">ТМ «Домашка»</a></li>
+						<li><a href="#">ТМ «Private Label»</a></li>
+					</ul>
+					<div class="book">
+						<img src="images/book/product.png" alt="Печенье «Инь-янь»">
+						<a href="#">Подробнее</a>
+						<div class="product_description">
+							<h4>Инь-Янь</h4>
+							<p>Фирменное песочное печенье</p>
+							<p>ГРАН-ПРИ 2008 IX Междунородного дегустционного конкурса «Солодкий тріумф»</p>
+							<div class="button">
+								<a href="#" class="btn_previous">назад</a>
+								<a href="#" class="btn_next">вперёд</a>
+							</div>
+						</div>	
+					</div>
+					</div>
+
+				<div class="new_product">
+					<div class="new_product_img">
+						<img src="images/book/new_product.png" alt="Печенье «Тигрята»">
+					</div>
+					<a href="#" class="btn_next"></a>
+					<a href="#" class="btn_previous"></a>
+					<h4>Печенье «Тигрята»</h4>
+					<p>ТМ «Чарівна мозаїка»</p>
+				</div>
+			</div>
+	</div>
+	<div class="advantages">
+		<div class="container">
+			<h2>Наши преимущества</h2>
+			<ul class="advantages_list">
+				<li class="advantage_approach">
+					<p> Особенный  подход к выпеканию печенья</p>
+				</li>
+				<li class="advantage_raw_materials">
+					<p>Строгий отбор сырья</p>
+				</li>
+				<li class="advantage_benefits">
+					<p>Выгодные условия сотрудничества и программы лояльности</p>
+				</li>
+				<li class="advantage_quality_controll">
+					<p>Контроль качества продукции</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="values">
+		<div class="container">
+			<h2>Наши ценности</h2>
+			<p>Сегодня кондитерские изделия ТМ «Чарівна Мозаїка» представлены нашими партнерами во многих городах Украины, и все знают – кондитерськая фабрика «Чарівна Мозаїка» гарантирует высокое качество и отличный вкус</p>
+			<div class="video">
+				<iframe width="500" height="343" src="https://www.youtube.com/embed/jxH5Zhi1Uic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+	<div class="news">
+		<h2>Волшебная жизнь</h2>
+		<div class="news_tred container">
+			<div class="news_item">
+				<h3>WorldFood Moscow</h3>
+				<p>Приглашаем посетить наш стенд на 22-ой Международной выставке продуктов питания и напитков WorldFood Moscow</p>
+			</div>
+			<div class="news_item">
+				<h3>Солодкий триумф</h3>
+				<p>31 октября 2012 Продукция компании ЧМ вновь получила самые высокие оценки жюри на 13 международном дегустационном конкурсе «Солодкий триумф 2013».</p>
+			</div>
+		</div>
+		<a href="#">читать все новости</a>
+	</div>
+	<div class="contact_form">
+		<div id="map"></div>
+		<div class="container">
+			<form action="#" class="contact">
+				<p>связаться</p>
+				<input type="text" placeholder="Имя">
+				<input type="email" placeholder="E-mail">
+				<input type="tel" placeholder="Телефон">
+				<textarea placeholder="Сообщение"></textarea>
+				<button class="button">Отправить</button>
+			</form>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="footer_top">
+				<ul class="list">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Продукция</a></li>
+					<li><a href="#">Волшебная жизнь</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">Клиентам</a></li>
+					<li><a href="#">Карьера с нами</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<div class="contacts">
+					<h4>Контакты</h4>
+					<div class="location">
+						<p>Ул. Автострадная набережная, 21А</p>
+						<p>А/Я 10236, Харьков, 61038, Украина</p>
+					</div>
+					<div class="phone">
+						<p>(057) 738-30-93 – отдел сбыта</p>
+						<p>(057) 738-76-93 – отдел снабжения</p>
+					</div>
+					<div class="email">
+						<p>charivna@mozaika.com.ua</p>
+					</div>
+				</div>
+				<div class="contact_us">
+					<p>Подписаться на рассылку</p>
+					<form action="#">
+						<input type="email" placeholder="Введите ваш e-mail">
+						<button>Подписаться</button>
+					</form>	
+				</div>
+			</div>
+			<div class="footer_bottom">
+				<ul class="soc_menu">
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+				</ul>
+				<p><span>&copy; 2014 Mozaika</span></p>
+				<p><span>&copy; 2014 Разработка сайта – Artjoker</span></p>
+			</div>
+		</div>
+	</footer>
+	
+	<script>
+
+	$('.carousel').owlCarousel({
+	  arrow:false,
+	  dots:true,
+	  loop:true,
+	  margin:10,
+	  nav:true,
+	  dotsEach: 1,
+	  autoplay:true,
+	  autoplayTimeout:6500,
+	  smartSpeed:700,
+
+	  items:1
+	})
+
+	</script>
+</body>
+</html>

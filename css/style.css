@@ -1,0 +1,59 @@
+@import url(reset.css);
+@import url(header.css);
+
+@font-face {
+    font-family: 'pf_din_text_comp_prothin';
+    src: url('../fonts/text_com_pro_thin/pfdintextcomppro-thin-webfont.eot');
+    src: url('../fonts/text_com_pro_thin/pfdintextcomppro-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/text_com_pro_thin/pfdintextcomppro-thin-webfont.woff2') format('woff2'),
+         url('../fonts/text_com_pro_thin/pfdintextcomppro-thin-webfont.woff') format('woff'),
+         url('../fonts/text_com_pro_thin/pfdintextcomppro-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+			font-family: "FlowRegular";
+			src: url("../fonts/flow/FlowRegular/FlowRegular.eot");
+			src: url("../fonts/flow/FlowRegular/FlowRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/flow/FlowRegular/FlowRegular.woff") format("woff"),
+			url("../fonts/flow/FlowRegular/FlowRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+@font-face {
+    font-family: 'text_comp_pro';
+    src: url('../fonts/PF Din Text Comp Pro Regular.ttf')
+}
+
+.container{
+	width: 990px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 800px){
+
+.container{
+	width: 740px;
+	margin: 0 auto;
+}
+}
+
+body{
+	font-family: 'pf_din_text_comp_prothin';
+	color: #959595;
+}
+
+a{
+	text-decoration: none;
+}
+
+h1, h2{
+	font-family: "FlowRegular";
+	color: #65baaf;
+	font-size: 40px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+}
