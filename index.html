@@ -59,6 +59,9 @@ function initMap() {
 					<li><a href="#">Eng</a></li>
 				</ul>	
 			</div>
+			<div class="menu-burger__header">
+				<span></span>
+			</div>
 			<nav class="header_bottom">
 				<ul>
 					<li><a href="#">О нас</a></li>
@@ -259,11 +262,18 @@ function initMap() {
 	  nav:true,
 	  dotsEach: 1,
 	  autoplay:true,
-	  autoplayTimeout:6500,
+	  autoplayTimeout:8500,
 	  smartSpeed:700,
 
 	  items:1
 	})
+
+	$(document).ready(function() {
+    $('.menu-burger__header').click(function() {
+        $('.menu-burger__header').toggleClass('open-menu');
+        $('.header_bottom').toggleClass('open-menu');
+    });
+});
 
 	</script>
 </body>
